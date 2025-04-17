@@ -83,7 +83,7 @@ const Home = () => {
               className="relative"
             >
               <img
-                src="https://raw.githubusercontent.com/frabrice/emodocar/refs/heads/main/man-76202_1280.jpg"
+                src="https://raw.githubusercontent.com/frabrice/Eleviqra/cc2d0bc4474fcebf08c6fbc29cbb8cee633a3d54/Business%20vision-rafiki.png"
                 alt="Team collaboration"
                 className="rounded-lg shadow-xl"
               />
