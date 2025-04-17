@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-[#178E79] text-white hover:bg-[#147a68];
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[#178E79] text-[#178E79] hover:bg-[#178E79]/10;
+  }
+
+  .hero-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    @apply text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl;
+    font-weight: 300;
+  }
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #178E79 1px, transparent 1px),
+    linear-gradient(to bottom, #178E79 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.logo-track {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
